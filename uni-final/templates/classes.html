@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--specifies title of the page !-->
-        <title>Home</title>
+        <title>Jackson Gregg - Classes</title>
     <head>
+
     <body>
-    <p>‘return render_template(“index.html”)</p>
+        <nav>
+            <p><strong>Navigation</strong></p>
+
+            <ul>               
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('classes') }}">Classes</a></li>
+                <li><a href="{{ url_for('assignments') }}">Assignments</a></li>
+            </ul>
+        </nav>
+
+        <h2>Classes:</h2>
+
+
+
+        <ul>
+            <li>MATH UN2030: Ordinary Differential Equations (3 points)</li>
+            <li>APMA E3101: Linear Algebra (3 points)</li>
+            <li>PHYS UN1602: Thermodynamics, Electricity, and Magnetism (Track 2) (2 of 2 courses) (3.5 points)</li>
+            <li>ENGL CC1010: University Writing: Readings in Law & Justice (3 points)</li>
+            <li>ENGI E1006: Introduction to Computing for Engineers and Applied Scientists (3 points)</li>
+            <li> PHYS ED: SAILING (INTERMEDIATE) (1 point)</li>
+        </ul>
+
+        <p>Favorite Class - My favorite class this semester has been University Writing, with Intro to Python a close second. I liked UW so much because my teacher would facilitate some amazing conversations and I got the opportunity to write about things that matter to me. In one of my essays I wrote about the main perspectives surrounding the scholarly discussion of surrogacy. Although I didn't bond with my classmates as mcuh as I'd hoped, I really enjoyed being in that writing class with them.</p>
+
+
+        /* <p>return render_template(“index.html”)</p> */
     </body>
 </html>
 

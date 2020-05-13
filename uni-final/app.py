@@ -1,21 +1,23 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Apr 21 14:57:17 2020
-
-@author: etill
-"""
-
-#import statements
 from flask import Flask, render_template
 
-#Flask app variable
+
 app = Flask(__name__)
 
-#static route
 @app.route("/")
-def hello():
+def home():
     return render_template("index.html")
 
-#start the server
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/assignments")
+def assignments():
+    return render_template("assignments.html")
+
+@app.route("/classes")
+def classes():
+    return render_template("classes.html")
+
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--specifies title of the page !-->
-        <title>Home</title>
-    <head>
-    return render_template(“index.html”)
+    <title>Jackson Gregg - Home</title>
+
+    <body>
+        <nav>
+            <p><strong>Navigation</strong></p>
+
+            <ul>               
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('classes') }}">Classes</a></li>
+                <li><a href="{{ url_for('assignments') }}">Assignments</a></li>
+            </ul>
+        </nav>
+
+        <img src="/static/images/Jackson Gregg.jpg" alt="Jackson Gregg">
+
+    </body>
 </html>

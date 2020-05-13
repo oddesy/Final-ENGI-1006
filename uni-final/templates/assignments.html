@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!--specifies title of the page !-->
-        <title>Home</title>
+        <title>Jackson Gregg - Assignments</title>
     <head>
+
     <body>
-    <p>‘return render_template(“index.html”)</p>
+        <nav>
+            <p><strong>Navigation</strong></p>
+
+            <ul>               
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('classes') }}">Classes</a></li>
+                <li><a href="{{ url_for('assignments') }}">Assignments</a></li>
+            </ul>
+        </nav>
+
+        <h2>Assignments</h2>
+
+        <ul>
+            <li>HW 1A -  We wrote pseudocode for an algorithm to convert binary to decimal,; converted binary to signed binary, one's complement, two's complement, and octal; added positive binary numbers; wrote an algorithm to calculate interest; and completed a truth table with logical operators.</li>
+            <li>HW 1B - We wrote a program to take user input and perform operations on the input. We also wrote various other algorithms to call on lists. </li>
+            <li>HW 2A - We had to understand a sorting algorithm; understand the time complexity of a binary sort algorithm for a phone book; and iterate through a list and understand the time complexity of the algorithm.</li>
+            <li>HW 2B - We had to simulate a falling object in Earth's gravity.</li>
+            <li>HW 3A - We had to write pseudocode and provide the time complexity for certain algorithms and implement functions recursively.</li>
+            <li>HW 3B - We had to build a module that would percolate down through a grid and write some of the beginning functions for the module that would analyze data from a dataset. </li>
+            <li>HW 4 - We had to model a class with a Teacher, Students, and Assignments. The program had to somewhat randomly assign students grades for each assignment that the Teacher (the user) would assign). We also had to plot all of the class information before program termination.</li>
+            <li>HW 5 - We had to finish our module that would analyze a dataset. It needed to provide complex statistics on each column of the dataset, plot multiple graphs of the data, plot a heatmap of the data, and project whether a row was malignant or benign. </li>
+            <li>Midterm - For the midterm, we had to implement three algorithms to preform on .ppm files (images). The first algorithm had to take three images and remove the photoshopped portions and return the unedited image. The second algorithm needed to turn the images into black and white images. The third algorithm needed to flip the image horizontally. </li>
+            <li>Final - </li>
+        </ul>
+
+        <p>Favorite Assignment</p>
+
+        <ul>
+            <li>Favorite Assignment - My favorite assignment was HW #5. I enjoyed it because I ran into many problems with my program, modeling the data, and testing it. Overall, this pushed me to learn more by reading a lot of documentation and relying on Stack Overflow and Piazza to very solve difficult problems that I was having.</li>
+        </ul>
+
     </body>
 </html>
+
+
 
