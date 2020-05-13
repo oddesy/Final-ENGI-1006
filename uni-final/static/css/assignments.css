@@ -15,3 +15,7 @@ h1, h2, p {
 body {
     background-color: #B9D9EB;
 }
+
+#left p {
+    text-align: left;
+}

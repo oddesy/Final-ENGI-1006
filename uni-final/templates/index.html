@@ -9,17 +9,46 @@
         <div>
             <nav>
                 <ul style="list-style: none"; id="menu">               
-                    <li><a href="{{ url_for('home') }}">Home</a></li>
-                    <li><a href="{{ url_for('about') }}">About</a></li>
-                    <li><a href="{{ url_for('classes') }}">Classes</a></li>
-                    <li><a href="{{ url_for('assignments') }}">Assignments</a></li>
+                    <li id="menu"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li id="menu"><a href="{{ url_for('about') }}">About</a></li>
+                    <li id="menu"><a href="{{ url_for('classes') }}">Classes</a></li>
+                    <li id="menu"><a href="{{ url_for('assignments') }}">Assignments</a></li>
+                    <li ><img src="/static/images/CU Logo.jpg" alt="CU Logo"></li>
                 </ul>
             </nav>
         </div>
 
         <h2>Home</h2>
 
-        <img src="/static/images/Jackson Gregg.jpg" alt="Jackson Gregg">
+        <div>
+            <div>
+                <img src="/static/images/Jackson Gregg.jpg" alt="Jackson Gregg">
+            </div>
+            <div>
+                <p>
+                    Hi,<br>
+                    I'm Jackson Gregg, a student in Dr. Paine's Intro to Python class. 
+                </p>
+            </div>
+        </div>
+        
+        <p>Current Grade: Freshman</p>
+        
+        <p>
+        Major:<br>
+        Applied Mathematics<br>
+        <br>
+        Minor:<br>
+        Philosophy (potentially)
+        </p>
 
+        <p>
+            <a href="https://www.theonion.com/">Favorite Website</a>
+        </p>   
+
+        <br>
+
+        <p><img src="/static/images/Columbia Pictures.jpg" alt="Columbia Pictures"></p>
+        
     </body>
 </html>
