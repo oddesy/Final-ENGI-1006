@@ -1,0 +1,17 @@
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu li {
+  display: inline-flex;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+body {
+    background-color: #B9D9EB;
+}

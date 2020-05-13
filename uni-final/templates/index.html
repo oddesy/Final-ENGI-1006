@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <title>Jackson Gregg - Home</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+        <title>Jackson Gregg - Home</title>
+    </head>
 
     <body>
-        <nav>
-            <p><strong>Navigation</strong></p>
+        <div>
+            <nav>
+                <ul style="list-style: none"; id="menu">               
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('classes') }}">Classes</a></li>
+                    <li><a href="{{ url_for('assignments') }}">Assignments</a></li>
+                </ul>
+            </nav>
+        </div>
 
-            <ul>               
-                <li><a href="{{ url_for('home') }}">Home</a></li>
-                <li><a href="{{ url_for('about') }}">About</a></li>
-                <li><a href="{{ url_for('classes') }}">Classes</a></li>
-                <li><a href="{{ url_for('assignments') }}">Assignments</a></li>
-            </ul>
-        </nav>
+        <h2>Home</h2>
 
         <img src="/static/images/Jackson Gregg.jpg" alt="Jackson Gregg">
 
